@@ -9,7 +9,6 @@
     border: none;
     background-color: transparent;
     color: var(--secondary-color);
-    transition: .2s;
 }
 
 .carousel button:hover{

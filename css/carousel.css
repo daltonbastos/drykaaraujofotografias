@@ -1,0 +1,29 @@
+.carousel{
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    justify-content: space-between;
+}
+
+.carousel button{
+    border: none;
+    background-color: transparent;
+    color: var(--secondary-color);
+    transition: .2s;
+}
+
+.carousel button:hover{
+    border: none;
+    background-color: rgba(0, 0, 0, .05);
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.carousel i{
+    width: 48px;
+}
+
+.carousel img{
+    height: 400px;
+    overflow: hidden;
+}

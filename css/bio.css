@@ -1,0 +1,59 @@
+#bio{
+    width: 91.66%;
+    margin-top: 8.33%;
+    margin-bottom: 8.33%;
+}
+
+#bio img{
+    width: 50%;
+    padding-right: 8.33%;
+    float: left;
+}
+
+#bio p{
+    font-family: Georgia, Serif;
+    text-align: justify;
+}
+
+.social-card{
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    color: var(--secondary-color);
+    margin-bottom: 22px;
+    align-items: center;
+}
+
+.social-card p{
+    margin: 0;
+    font-family: Georgia, Serif;
+}
+
+.social-card h3{
+    margin-top: 4px;
+}
+
+.social-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 22px;
+    object-fit: contain;
+}
+
+.social-card a{
+    border: 1px solid var(--secondary-color);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    color: var(--secondary-color);
+}
+
+.social-card a:hover{
+    background-color: rgba(75, 75, 75, .2);
+}

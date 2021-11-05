@@ -24,8 +24,11 @@ button{
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: Helvetica, Serif;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav{
@@ -36,12 +39,22 @@ nav{
     width: 91.66%;
     padding-left: 8.33%;
     padding-right: 8.33%;
-    margin-left: 4.16%;
     border-bottom: solid rgba(0, 0, 0, .15) 1px;
 }
 
 nav img{
     height: 122px;
+}
+
+nav button{
+    display: none;
+    border: none;
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+nav button:hover{
+    color: var(--accent-color);
 }
 
 .menu{
@@ -51,27 +64,16 @@ nav img{
 
 .menu a{
     color: var(--secondary-color);
-    margin-left: 12px;
-    padding: 4px;
+    margin-left: 6px;
+    padding: 6px;
 }
 
 .menu a:hover{
     color: var(--accent-color);
 }
 
-.menu button{
-    border: none;
-    background-color: transparent;
-    color: var(--secondary-color);
-}
-
-.menu button:hover{
-    color: var(--accent-color);
-}
-
 footer{
     width: 91.66%;
-    margin-left: 4.16%;
     border-top: solid rgba(0, 0, 0, .15) 1px;
     text-align: center;
     color: var(--secondary-color);
@@ -99,12 +101,32 @@ footer a:hover{
     opacity: .7;
 }
 
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
 @media only screen and (max-width: 900px){
     .menu{
         display: none;
     }
 
     .menu button{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .menu{
+        display: none;
+    }
+
+    nav button{
         display: block;
     }
 }

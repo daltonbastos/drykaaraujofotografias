@@ -1,0 +1,43 @@
+.portifolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    justify-content: space-around;
+}
+
+.portifolio-card{
+    width: 33.33%;
+    height: 400px;
+    text-align: center;
+    padding-right: 12px;
+    overflow: hidden;
+}
+
+.portifolio-card img{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.portifolio-card a{
+    color: var(--secondary-color);
+}
+
+.portifolio-card a:hover{
+    opacity: .8;
+}
+
+@media only screen and (max-width: 850px){
+    .portifolio-card{
+        width: 41.66%;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .portifolio-card{
+        width: 91.66%;
+        padding: 0;
+    }
+}

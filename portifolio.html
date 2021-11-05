@@ -8,7 +8,7 @@
         <title>Dryka Araujo Fotografia</title>
 
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="css/carousel.css"/>
+        <link rel="stylesheet" type="text/css" href="css/portifolio.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -16,8 +16,8 @@
     <body>
         <div id="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="selected" href="index.html">INÍCIO</a>
-            <a href="portifolio.html">PORTIFÓLIO</a>
+            <a href="index.html">INÍCIO</a>
+            <a class="selected" href="portifolio.html">PORTIFÓLIO</a>
             <a href="afotografa.html">A FOTOGRAFA</a>
             <a id="contato" href="https://l.instagram.com/?u=https%3A%2F%2Fbit.ly%2F2TGlZlk&e=ATMMo1y0un0mhGrGZ_NqTiuZCtCY3GbAi-pXHYbJAqIaZYM5D-xsyaEeDKLC39muKiBbtT0WT3-QVp6jiKAFRQ&s=1" target="_blank">CONTATO</a>
         </div>
@@ -30,33 +30,34 @@
             <button onclick="openNav()"><i class="material-icons">menu</i></button>
 
             <div class="menu">
-                <a class="selected" href="index.html">INÍCIO</a>
-                <a href="portifolio.html">PORTIFÓLIO</a>
+                <a href="index.html">INÍCIO</a>
+                <a class="selected" href="portifolio.html">PORTIFÓLIO</a>
                 <a href="afotografa.html">A FOTOGRAFA</a>
                 <a id="contato" href="https://l.instagram.com/?u=https%3A%2F%2Fbit.ly%2F2TGlZlk&e=ATMMo1y0un0mhGrGZ_NqTiuZCtCY3GbAi-pXHYbJAqIaZYM5D-xsyaEeDKLC39muKiBbtT0WT3-QVp6jiKAFRQ&s=1" target="_blank">CONTATO</a>
             </div>
         </nav>
 
-        <section  class="carousel">
-            <button class="prev" onclick="scrollGalery(-1)">&#10094;</button>
-
-            <div id="carousel-galery">
-                <img class="galery-img" src="img/galery/dry1_1.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry1_2.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry1_3.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry2_1.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry2_2.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry2_3.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry3_1.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry3_2.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry3_3.jpg" alt="">
+        <section class="portifolio">
+            <div class="portifolio-card">
+                <a class="portifolio-card" href="">
+                    <img src="img/galery/dry1_1.jpg" alt="">
+                    <h4>ENSAIOS FEMININOS</h4>
+                </a>
             </div>
 
-            <button class="next" onclick="scrollGalery(1)">&#10095;</button>
-        </section>
+            <div class="portifolio-card">
+                <a class="portifolio-card" href="">
+                    <img src="img/galery/dry2_1.jpg" alt="">
+                    <h4>PAISAGEM</h4>
+                </a>
+            </div>
 
-        <section>
-            <!--+FOTOS-->
+            <div class="portifolio-card">
+                <a class="portifolio-card" href="">
+                    <img src="img/galery/infantil/infantil_1.jpg" alt="">
+                    <h4>INFANTIL</h4>
+                </a>
+            </div>
         </section>
 
         <footer>
@@ -69,6 +70,5 @@
         </footer>
 
         <script src="js/slidenav.js"></script>
-        <script src="js/carousel.js"></script>
     </body>
 </html>

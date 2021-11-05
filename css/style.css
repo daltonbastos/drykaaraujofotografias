@@ -111,22 +111,49 @@ footer a:hover{
     flex-direction: column;
 }
 
-@media only screen and (max-width: 900px){
-    .menu{
-        display: none;
-    }
-
-    .menu button{
-        display: block;
-    }
+#sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+    transition: .2s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
-@media only screen and (max-width: 900px){
+#sidenav a{
+    padding: 8px;
+    margin: 8px;
+    color: var(--primary-color);
+}
+
+#sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+}
+
+.selected{
+    color: var(--accent-color) !important;
+}
+
+@media only screen and (max-width: 850px){
     .menu{
         display: none;
     }
 
     nav button{
         display: block;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    nav{
+        padding-left: 0;
     }
 }

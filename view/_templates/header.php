@@ -9,7 +9,6 @@
         <title>Dryka Araujo Fotografia</title>
 
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="css/bio.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -17,23 +16,25 @@
     <body>
         <div id="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">INÍCIO</a>
-            <a href="">PORTIFÓLIO</a>
-            <a href="afotografa.html">A FOTOGRAFA</a>
+            <a class="<?php echo $pagina == 'inicio' ? 'selected' : ' '; ?>" href="?p=inicio">INÍCIO</a>
+            <a class="<?php echo $pagina == 'portifolio' ? 'selected' : ' '; ?>" href="?p=portifolio">PORTIFÓLIO</a>
+            <a class="<?php echo $pagina == 'afotografa' ? 'selected' : ' '; ?>" href="?p=afotografa">A FOTOGRAFA</a>
             <a id="contato" href="https://l.instagram.com/?u=https%3A%2F%2Fbit.ly%2F2TGlZlk&e=ATMMo1y0un0mhGrGZ_NqTiuZCtCY3GbAi-pXHYbJAqIaZYM5D-xsyaEeDKLC39muKiBbtT0WT3-QVp6jiKAFRQ&s=1" target="_blank">CONTATO</a>
         </div>
 
         <nav>
-            <a href="index.html">
+            <a href="?p=inicio">
                 <img src="img/logo.png" alt="Dryka Araujo Fotografia">
             </a>
             
             <button onclick="openNav()"><i class="material-icons">menu</i></button>
 
+            <?php $pagina = $_GET['p'] ?>
+
             <div class="menu">
-                <a href="index.html">INÍCIO</a>
-                <a href="">PORTIFÓLIO</a>
-                <a href="afotografa.html">A FOTOGRAFA</a>
+                <a class="<?php echo $pagina == 'inicio' ? 'selected' : ' '; ?>" href="?p=inicio">INÍCIO</a>
+                <a class="<?php echo $pagina == 'portifolio' ? 'selected' : ' '; ?>" href="?p=portifolio">PORTIFÓLIO</a>
+                <a class="<?php echo $pagina == 'afotografa' ? 'selected' : ' '; ?>" href="?p=afotografa">A FOTOGRAFA</a>
                 <a id="contato" href="https://l.instagram.com/?u=https%3A%2F%2Fbit.ly%2F2TGlZlk&e=ATMMo1y0un0mhGrGZ_NqTiuZCtCY3GbAi-pXHYbJAqIaZYM5D-xsyaEeDKLC39muKiBbtT0WT3-QVp6jiKAFRQ&s=1" target="_blank">CONTATO</a>
             </div>
         </nav>

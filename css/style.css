@@ -1,4 +1,7 @@
-@import url(grid-view.css);
+@import url(bio.css);
+@import url(carousel.css);
+@import url(modal.css);
+@import url(portifolio.css);
 
 :root {
     --primary-color: #fff;

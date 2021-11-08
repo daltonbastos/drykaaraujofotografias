@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="stylesheet" type="text/css" href="css/carousel.css"/>
+        <link rel="stylesheet" type="text/css" href="css/modal.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -41,15 +42,12 @@
             <button class="prev" onclick="scrollGalery(-1)">&#10094;</button>
 
             <div id="carousel-galery">
-                <img class="galery-img" src="img/galery/dry1_1.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry1_2.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry1_3.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry2_1.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry2_2.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry2_3.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry3_1.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry3_2.jpg" alt="">
-                <img class="galery-img" src="img/galery/dry3_3.jpg" alt="">
+                <img onclick="showModal(this)" class="galery-img" src="img/galery/dry_1.jpg" alt="">
+                <img onclick="showModal(this)" class="galery-img" src="img/galery/dry_2.jpg" alt="">
+                <img onclick="showModal(this)" class="galery-img" src="img/galery/dry_3.jpg" alt="">
+                <img onclick="showModal(this)" class="galery-img" src="img/galery/dry_4.jpg" alt="">
+                <img onclick="showModal(this)" class="galery-img" src="img/galery/dry_5.jpg" alt="">
+                <img onclick="showModal(this)" class="galery-img" src="img/galery/dry_6.jpg" alt="">
             </div>
 
             <button class="next" onclick="scrollGalery(1)">&#10095;</button>
@@ -68,7 +66,13 @@
             </div>
         </footer>
 
+        <div id="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="img/dry.jpg" alt="">
+        </div>
+
         <script src="js/slidenav.js"></script>
         <script src="js/carousel.js"></script>
+        <script src="js/modal.js"></script>
     </body>
 </html>

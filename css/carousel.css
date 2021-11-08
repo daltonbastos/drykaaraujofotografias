@@ -42,7 +42,7 @@
 
 #carousel-galery{
     scroll-behavior: smooth;
-    overflow-x: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-direction: row;
     scrollbar-width: none; 

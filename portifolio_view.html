@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Dryka Araujo Fotografia</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/modal.css"/>
+        <link rel="stylesheet" type="text/css" href="css/portifolio.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div id="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">INÍCIO</a>
+            <a class="selected" href="portifolio.html">PORTIFÓLIO</a>
+            <a href="afotografa.html">A FOTOGRAFA</a>
+            <a id="contato" href="https://l.instagram.com/?u=https%3A%2F%2Fbit.ly%2F2TGlZlk&e=ATMMo1y0un0mhGrGZ_NqTiuZCtCY3GbAi-pXHYbJAqIaZYM5D-xsyaEeDKLC39muKiBbtT0WT3-QVp6jiKAFRQ&s=1" target="_blank">CONTATO</a>
+        </div>
+
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Dryka Araujo Fotografia">
+            </a>
+            
+            <button onclick="openNav()"><i class="material-icons">menu</i></button>
+
+            <div class="menu">
+                <a href="index.html">INÍCIO</a>
+                <a class="selected" href="portifolio.html">PORTIFÓLIO</a>
+                <a href="afotografa.html">A FOTOGRAFA</a>
+                <a id="contato" href="https://l.instagram.com/?u=https%3A%2F%2Fbit.ly%2F2TGlZlk&e=ATMMo1y0un0mhGrGZ_NqTiuZCtCY3GbAi-pXHYbJAqIaZYM5D-xsyaEeDKLC39muKiBbtT0WT3-QVp6jiKAFRQ&s=1" target="_blank">CONTATO</a>
+            </div>
+        </nav>
+
+        <section class="portifolio">
+            <h2>ENSAIOS FEMININOS</h2>
+
+            <div class="galery">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_1.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_2.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_3.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_4.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_5.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_6.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_7.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_8.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_9.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_10.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_11.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_12.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_13.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_14.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_15.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_16.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_17.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_18.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_19.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_21.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_22.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_23.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_24.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_25.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_26.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_27.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_28.jpg" alt="">
+                <img onclick="showModal(this)" src="img/galery/feminino/dry_29.jpg" alt="">
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy Todos os direitos reservados.</p>
+
+            <div>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fbit.ly%2F2TGlZlk&e=ATMIJjj9n18E3EAyBAS33lK-sQFO4zZfxRBQduhaosLrX_NchQwGIzsUNh5nCMq38K4gpiFOki8s-PuYqr-IQw&s=1" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/drykraujofotografias/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+        </footer>
+
+        <div id="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="img/dry.jpg" alt="">
+        </div>
+
+        <script src="js/modal.js"></script>
+        <script src="js/slidenav.js"></script>
+    </body>
+</html>

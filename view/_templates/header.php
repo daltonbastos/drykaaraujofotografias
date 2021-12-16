@@ -14,6 +14,8 @@
     </head>
 
     <body>
+        <?php $pagina = isset($_GET['p']) ? $_GET['p'] : 'inicio' ?>
+
         <div id="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a class="<?php echo $pagina == 'inicio' ? 'selected' : ' '; ?>" href="?p=inicio">INÍCIO</a>
@@ -28,8 +30,6 @@
             </a>
             
             <button onclick="openNav()"><i class="material-icons">menu</i></button>
-
-            <?php $pagina = $_GET['p'] ?>
 
             <div class="menu">
                 <a class="<?php echo $pagina == 'inicio' ? 'selected' : ' '; ?>" href="?p=inicio">INÍCIO</a>

@@ -1,2 +1,2 @@
 # drykraujofotografias
- Site de contato e portifólio da Drykr Aujo Fotografias
+ Site de contato e portifólio da Drykar Aujo Fotografias
